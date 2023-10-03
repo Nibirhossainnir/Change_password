@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password change</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="cp" onclick="return pass_ch()">change password</button>
+<div id="contain" class="contain">
+    <form id="f1" action="#" onsubmit="return form()">
+        <div class="uname"><input id="text" name="text" type="text" value="" placeholder="Username" autofocus="1"></div>
+        <div class="pass"><input id="pass" name="pass" type="password" placeholder="Password"></div>
+        <div class="sub"><input id="submit" value="LOG IN" type="submit"></div>
+    </form>
+</div>
+<div id="contain2" class="contain2 hide2">
+    <button  id="close" onclick="return vclose()"></button>
+    <div id="f2">
+        <div class="uname"><input id="ou" value="" name="text2" type="text" placeholder="Old username"></div>
+        <div class="pass"><input id="op" name="pass2" type="password" placeholder="Old password"></div>
+        <div class="uname"><input id="nu" value="" name="text2" type="text" placeholder="New username"></div>
+        <div class="pass"><input id="np" name="pass2" type="password" placeholder="New password"></div>
+        <div class="sub sub2"><input id="submit2" value="Change password" type="submit" onclick="return formb()"></div>
+    </div>
+    
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
